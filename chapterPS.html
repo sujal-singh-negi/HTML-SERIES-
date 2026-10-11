@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato - Food Delivery App</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f7;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #e23744;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div:first-child {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+header div:last-child {
+    display: flex;
+    gap: 25px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+header a:hover {
+    color: #ffe0e0;
+}
+
+/* Main section */
+main {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+main div {
+    font-size: 42px;
+    font-weight: bold;
+    color: #e23744;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 650px;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    header div:last-child {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main div {
+        font-size: 30px;
+    }
+
+    main p {
+        font-size: 16px;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>ZOMATO</div>
+        <div>
+            <a href="/Home">Home</a>
+            <a href="/About us">About us</a>
+            <a href="contact us">contact us</a>
+        </div>
+    </header>
+
+    <main>
+        <div>
+            Order food anytime, anywhere
+        </div>
+        <p>For over a decade, we’ve enabled our customers to discover new tastes, delivered right to their doorstep</p>
+    </main>
+    <footer>
+        Copyrights All Zomato reserved
+    </footer>
+</body>
+
+</html>
