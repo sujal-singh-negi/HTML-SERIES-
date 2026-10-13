@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table - html</title>
+    <style>* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+font-family: Arial, sans-serif;
+background: linear-gradient(135deg, #141e30, #243b55);
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+table {
+width: 80%;
+max-width: 700px;
+border-collapse: collapse;
+background-color: #ffffff;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+thead {
+background-color: #e23744;
+color: white;
+}
+
+th {
+padding: 18px 25px;
+text-transform: uppercase;
+letter-spacing: 1px;
+font-size: 15px;
+}
+
+td {
+padding: 16px 25px;
+text-align: center;
+color: #333;
+font-size: 15px;
+border-bottom: 1px solid #eeeeee;
+}
+
+tbody tr:nth-child(even) {
+background-color: #f8f8f8;
+}
+
+tbody tr:hover {
+background-color: #ffe5e8;
+transition: 0.3s ease;
+}
+
+tbody tr:last-child td {
+border-bottom: none;
+}
+
+@media (max-width: 500px) {
+table {
+width: 95%;
+}
+
+
+th, td {
+    padding: 12px 8px;
+    font-size: 12px;
+}
+
+
+}
+</style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>role</th>
+                <th>salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>sujal</td>
+                <td>kutte ki jagah</td>
+                <td>$50</td>
+            </tr>
+            <tr>
+                <td>shailendra</td>
+                <td>kutte ka bestfriend</td>
+                <td>$500</td>
+            </tr>
+            <tr>
+                <td>vedic</td>
+                <td>kutte ki biwi</td>
+                <td>$5</td>
+            </tr>
+            <tr>
+                <td colspan="2">Thank </td> 
+                <td>you</td>  
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
